@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MsgApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= @title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,7 +9,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="container">
+  <body class="container text-body">
+    <h1 class="mb-4 display-4 text-primary">MsgBoard</h1>
     <%= yield %>
+    <div class="mt-4 text-center small text-dark border-top border-dark">copyright</div>
   </body>
 </html>
