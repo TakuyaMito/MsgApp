@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :answers
+  resources :questions
   get 'messages/index'
   get 'messages', to: 'messages#index'
   get 'messages/add'
